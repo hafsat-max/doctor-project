@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./input/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- INFO SECTION -->
+      <section class="bg-[#0152A8] py-[20px] hide">
+        <div class="flex w-[80%] m-auto justify-between">
+          <p class="text-white font-normal size-14">
+            Welcome to Pharma. We provides medical accessories
+          </p>
+
+          <!-- Phone number 1 -->
+          <div class="flex gap-[9px]">
+            <img src="./output/images/call.png" alt="" class="icon-width" />
+            <p class="text-white font-normal size-14">(404) 850 - 7080</p>
+          </div>
+
+          <!-- Phone number 2 -->
+          <div class="flex gap-[9px]">
+            <img src="./output/images/at.png" alt="" class="icon-width" />
+            <p class="text-white font-normal size-14">(404) 850 - 7080</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beginning of the nav bar -->
+      <nav class="flex items-center w-[80%] m-auto justify-between">
+        <!-- logo -->
+        <img src="./output/images/Logo.png" alt="" width="" class="img-clamp" />
+
+        <!-- nav lists -->
+        <ul class=" ul flex size-18 items-center gap-[15px]">
+          <a href="">
+            <li>Home</li>
+          </a>
+
+          <a href="./pages/about.html">
+            <li>About</li>
+          </a>
+
+          <a href="./pages/services.html">
+            <li>Service</li>
+          </a>
+
+          <a href="" class="flex items-center gap-[3px] hide">
+            <li>Pages</li>
+            <img src="./output/images/tick.png" alt="" class="hide" />
+          </a>
+          <a href="">
+            <li class="whitespace-nowrap">Contact us</li>
+          </a>
+        </ul>
+
+        <!-- call to action button -->
+        <button
+          class="cta-pad bg-[#0FE3AF] size-18 font-semibold text-[#363636]"
+        >
+          Appointment
+        </button>
+
+        <!-- hamburger -->
+        <img
+          src="./output/images/hamburger.svg"
+          alt=""
+          width="50"
+          class="none hamburger"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <!-- BEGINNING OF THE HERO SECTION -->
+      <section class="hero-section flex">
+        <div class="flex w-[80%] mx-auto justify-center items-center">
+          <!-- text container -->
+          <div class="text-container flex flex-col flex-1">
+            <h3
+              class="size-14 mt-[15px] font-normal text-[#1c1c1c] uppercase tracking-[0.415em] bg-[#0FE3AF] px-[10px] py-[1px] self-start"
+            >
+              MEDICAL PROFESSIONALS
+            </h3>
+
+            <!-- HEADING -->
+            <h1
+              class="font-bold text-[#143450] size-50 max-w-[530px] mt-[23px]"
+            >
+              Makes Your Health Better Will Makes Us Better
+            </h1>
+            <p
+              class="text-[#1C1C1C] sizes-16 font-normal max-w-[430px] text-left"
+            >
+              Our team of highly trained professionals uses the latest healing
+              technologies to restore you to pain-free health quickly and
+              easily.
+            </p>
+            <button
+              class="bg-[#0152A8] text-white font-medium size-14 self-start cta-pad mt-[14px]"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- image container -->
+        </div>
+      </section>
+      <!-- END OF HERO  -->
+
+      <!-- BEGINNING OF SERVICES SECTION -->
+      <section class="services mt-[4rem] flex flex-col mb-[40px]">
+        <!-- heading -->
+        <h3
+          class="tracking-[0.415em] text-[#1c1c1c] size-14 font-medium self-center"
+        >
+          SERVICES
+        </h3>
+
+        <!-- sub topic -->
+        <h2
+          class="text-center max-w[400px] size-30 text-[#1C1C1C] font-semibold max-w-[400px] self-center mt-[16px]"
+        >
+          Feel Like Home With Best Medical Care
+        </h2>
+
+        <!-- CARDS SECTION -->
+        <section class="cards-section mt-[24px] w-[80%] m-auto gap10">
+          <!-- BEGINNING OF ROW 1 -->
+
+          <!-- double card 1 -->
+          <div class="card-div grid grid-cols-[1fr_1fr] gap-[10px]">
+            <!-- pill card -->
+            <div
+              class="h250 light-grey flex flex-1 flex-col gap-[10px] justify-between p-[20px]"
+            >
+              <!-- icon -->
+              <img src="./output/pill.png" alt="" width="40" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Angioplasty
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454]">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex items-center gap-[12px]">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/grey.png" width="16" alt="" />
+              </div>
+            </div>
+
+            <!-- heart -->
+            <div
+              class="h250 light-grey flex flex-1 flex-col gap-[10px] justify-between p-[20px] h250"
+            >
+              <!-- icon -->
+              <img src="./output/heart.png" alt="" width="40" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Cardiology
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454]">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex gap-[12px] items-center">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/green.png" width="16" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- double card 2 -->
+          <div class="card-div grid grid-cols-[1fr_1fr] ">
+            <!-- pill card -->
+            <div
+              class=" h250 light-grey flex flex-1 flex-col gap-[10px] justify-between p-[20px]"
+            >
+              <!-- icon -->
+              <img src="./output/dental.png" alt="" width="30" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Dental
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454]">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex gap-[12px] items-center">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/grey.png" width="16" alt="" />
+              </div>
+            </div>
+
+            <!-- heart -->
+            <div class="h250 light-grey flex flex-1 flex-col gap-[10px] max-w-[100%] ">
+              <img src="./output/images/dentist.png" alt="" class="max-w-[100%] h-[100%] object-cover">
+            </div>
+            </div>
+          </div>
+
+          <!-- BEGINNING OF ROW 2 -->
+
+          <!-- double card 3 -->
+          <div class="card-div grid grid-cols-[1fr_1fr] ">
+            <!-- pill card -->
+            <div
+              class="h250 light-grey flex flex-1 flex-col gap-[10px] justify-between p-[20px]"
+            >
+              <!-- icon -->
+              <img src="./output/eye.png" alt="" width="40" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Angioplasty
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454]">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex gap-[12px] items-center">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/grey.png" width="16" alt="" />
+              </div>
+            </div>
+
+            <!-- heart -->
+            <div class="h250 light-grey flex flex-1 flex-col gap-[10px] max-w-[100%] ">
+              <img src="./output/images/optician.png" alt="" class="max-w-[100%] h-[100%] object-cover">
+            </div>
+            </div>
+
+          <!-- double card 4 -->
+          <div class="card-div grid grid-cols-[1fr_1fr] gap-[10px]">
+            <!-- pill card -->
+            <div
+              class="h250 light-grey flex flex-col gap-[10px] justify-between p-[20px]"
+            >
+              <!-- icon -->
+              <img src="./output/brain.png" alt="" width="40" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Endocrinology
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454] ">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex gap-[12px] items-center">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/grey.png" width="16" alt="" />
+              </div>
+            </div>
+
+            <!-- heart -->
+            <div
+              class="h250 light-grey flex flex-col gap-[10px] justify-between p-[20px]"
+            >
+              <!-- icon -->
+              <img src="./output/syringe.png" alt="" width="40" />
+
+              <!-- heading -->
+              <h3 class="text-[#1C1C1C] font-semibold size-20 montserrat">
+                Orthopaedics
+              </h3>
+              <p class="lato font-normal size-12 text-[#545454]">
+                Our team of highl professionals uses the latest heal echnologies
+                health quickly and easily.
+              </p>
+
+              <!-- READ MORE -->
+              <div class="readmore flex gap-[12px] items-center">
+                <h4 class="text-[#363636] size-16 font-medium inter">
+                  Read More
+                </h4>
+                <img src="./output/images/grey.png" width="16" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- END OF CARDS SECTION -->
+      </section>
+      <!-- END OF SERVICES SECTION -->
+
+      <!-- BEGINNING OF ABoUT SECTION -->
+      <section class="about-section  flex">
+        <div class="w-[80%] m-auto flex justify-end items-center about-container" >
+
+          <!-- white card -->
+          <div class=" flex flex-col gap-[20px] justify-center p-[30px] bg-white">
+            <h4 class="lato tracking-[0.415rem] text-[#1C1C1C] size-14 font-normal borders self-start
+            ">ABOUT US</h4>
+            <h2 class="montserrat size-30 text-[#1C1C1C] font-semibold  max-w-[400px]">The Heart And Science Of Medicate Test</h2>
+            <p class="text-[##545454] text-left lato size-16 font-normal max-w-[500px]">Capitalize on low hanging fruit to identify a ballpark value 
+              added activity to beta test. Override the digital divide with information highway will close.</p>
+            
+              <!-- ICON DIV -->
+            <div class="flex gap-[20px]">
+              <!-- inner icons flex -->
+              <div class="flex justify-between gap-[14px]">
+                <img src="./output/images/about-icon1.png" width="50" alt="">
+                <p class="text-[#1C1C1C] size-14 font-semibold lato">Multi Speciality <br> Pharma Treatment</p>
+              </div>
+
+              <!-- inner icons flex -->
+              <div class="flex justify-between gap-[14px]">
+                <img src="./output/images/about-icon2.png" width="50" alt="">
+                <p class="text-[#1C1C1C] size-14 font-semibold lato">Multi Speciality <br> Pharma Treatment</p>
+              </div>
+          </div>
+
+          <!--About button  -->
+          <button class="bg-[#0152A8] text-white self-start px-[30px] py-[17px] inter size-16 font-medium">
+            More About Us
+          </button>
+        </div>
+      </section>
+      <!--  END OF ABOUT SECTION-->
+
+
+      <!-- BEGINNING OF ICONS DISPLAY SECTION -->
+      <section class=" mt-[70px] mb-[40px] icons-display flex items-center flex-wrap justify-between w-[80%] m-auto gap-[20px]">
+
+        <!-- icons flex 1 -->
+        <div class="flex items-center gap-[10px]">
+          <!-- icon -->
+          <img src="./output/images/spinal.png"  alt="" class="icon-clamp">
+          <!--icon text -->
+          <p class="montserrat font-semibold text-[#0152A8] size25">Spinal Care</p>
+        </div>
+
+        <!-- icon flex 2 -->
+        <div class="flex items-center gap-[10px]">
+          <!-- icon -->
+          <img src="./output/images/drug.png"  alt="" class="icon-clamp">
+          <!--icon text -->
+          <p class="MuseoModerno font-semibold text-[#0152A8] size25">Mr.Medical </p>
+        </div>
+
+        <!-- icon flex 3 -->
+        <div class="flex items-center gap-[10px]">
+          <!-- icon -->
+          <img src="./output/images/first-aid.png"  alt="" class="icon-clamp">
+          <!--icon text -->
+          <p class="montserrat font-semibold text-[#0152A8] size25 merienda">Twohands</p>
+        </div>
+
+        <!-- icon flex 4 -->
+        <div class="flex items-center gap-[10px]">
+          <!-- icon -->
+          <img src="./output/images/mask.png"  alt="" class="icon-clamp">
+          <!--icon text -->
+          <p class="jetbrains font-semibold text-[#0152A8] size25">Health Care</p>
+        </div>
+
+        <!-- icon flex 5 -->
+        <div class="flex items-center gap-[10px]">
+          <!-- icon -->
+          <img src="./output/images/love.png"  alt="" class="icon-clamp">
+          <!--icon text -->
+          <p class="frenchcanon font-semibold text-[#0152A8] size-16">MEDICAL LOVE</p>
+        </div>
+
+      </section>
+      <!-- END OF ICONS DISPLAY SECTION -->
+
+      <!-- Beginning of Appointment section -->
+      <section class="px-[20px] appoint-section h-[412px]  w-[80%] mx-auto flex flex-col justify-center items-center mt-[70px] gap-[23px] mb-[90px]">
+        <h3 class="montserrat text-center text-white size-30 font-semibold max-w-[450px] ">Schedule an imperson or virtual appointment today</h3>
+         <button class="text-center cta-pad bg-[#0FE3AF] px-[20px] py-[17px] inter font-medium size-12 text-[#1C1C1C] w-[200px] whitespace-nowrap">Book an appointment</button>
+      </section>
+      <!-- End of Appointment section -->
+
+
+      <!-- BEGINNING OF SPECIAL CARE SECTION -->
+        <section class="special-care flex justify-between w-[80%] mx-auto mb-[50px]">
+          <!-- TEXT SIDE -->
+          <div class="special-texts flex flex-1 flex-col gap-[20px]">
+            <h4 class="lato tracking-[0.415rem] text-[#1C1C1C] size-14 font-normal borders self-start"> SPECIAL CARE</h4>
+            <h3 class="montserrat font-semibold size-30 text-[#1C1C1C]">We provide a best care for your health with specialist</h3>
+
+            <p class="text-[#545454] max-w-[480px] size-16 font-normal lato">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer.
+             </p>
+            <p class="text-[#545454] max-w-[480px] size-16 font-normal lato">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+             <!-- icon with text -->
+            <div class="flex gap-[5px] items-center">
+              <img src="./output/images/green-tick.png" alt="">
+              <p class="text-[#1C1C1C] size-16 font-normal lato">20+ years of excellence</p>
+            </div>
+
+            <div class="flex gap-[5px] items-center">
+              <img src="./output/images/green-tick.png" alt="">
+              <p class="text-[#1C1C1C] size-16 font-normal lato">Professional Experts</p>
+            </div>
+
+            <button class="size-16 text-white font-medium inter self-start bg-[#0152A8] py-[17px] px-[40px]">Discover Now</button>
+          </div>
+          <!-- IMAGE SIDE -->
+          <div class="special-img flex flex-1 gap-[6px] ">
+            <!-- image one -->
+            <div class="flex-1 img400">
+              <img src="./output/images/doctor1.png" alt="" class="object-cover full-img" >
+            </div>
+
+            <!-- image two -->
+            <div class="flex-1 img400">
+              <img src="./output/images/doctor2.png" alt="" class="object-cover full-img">
+            </div>
+          </div>
+        </section>
+      <!-- END OF SPECIAL CARE SECTION -->
+
+
+      <!-- FEEDBACK SECTION -->
+      <section class="flex flex-col mb-[5rem] gap-[16px] w-[80%] mx-auto ">
+        <h4 class="lato font-normal size-14 text-center borders text-[#1C1C1C] tracking-[0.415em] self-center">FEEDBACK</h4>
+        <h2 class="text-center self-center text-[#1C1C1C] size-30 font-semibold max-w-[490px] montserrat tracking-[1.2px]" >Feedbacks about our service from the bottom of heart</h2>
+
+        <!-- PEOPLE'S FEEBACKS -->
+        <div class="feedback-grid grid grid-cols-2  gap-[10px]">
+          <!-- FIRST FEEDBACK -->
+          <div class="feedback flex flex-col p-[25px] bg-[#F1F1F1]">
+
+            <!-- TITLE -->
+            <div class="title flex justify-between items-center">
+
+              <!-- left side title -->
+              <div class="flex gap-[5px] items-center ">
+                <img src="./output/images/robert.png" alt="" width="40">
+                <div>
+                  <h3 class="text-[#1C1C1C] montserrat size-20 font-semibold">Robert Davis</h3>
+                  <p class="lato font-normal size-16 text-[#545454]">Dental Patient</p>
+                </div>
+
+              </div>
+
+              <!-- Quotations -->
+              <img src="./output/images/quote.png" height="30" alt="" width="40" >
+
+            </div>
+
+            <!-- paragraph -->
+            <p class="lato font-normal size-16 mt-[20px] mb-[23px] text-[#545454]">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+            <!-- stars -->
+            <div class="flex gap-[4px]">
+              <img src="./output/images/star.png" width="20" height="20" alt="" >
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+            </div>
+
+          </div>
+
+          <!-- SECOND FEEDBACK -->
+          <div class="feedback flex flex-col p-[25px] bg-[#F1F1F1]">
+
+            <!-- TITLE -->
+            <div class="title flex justify-between items-center">
+
+              <!-- left side title -->
+              <div class="flex gap-[5px] items-center ">
+                <img src="./output/images/vanessa.png" alt="" width="40">
+                <div>
+                  <h3 class="text-[#1C1C1C] montserrat size-20 font-semibold">Vanseena Adams</h3>
+                  <p class="lato font-normal size-16 text-[#545454]">Dental Patient</p>
+                </div>
+
+              </div>
+
+              <!-- Quotations -->
+              <img src="./output/images/quote.png" height="30" alt="" width="40" >
+
+            </div>
+
+            <!-- paragraph -->
+            <p class="lato font-normal size-16 mt-[20px] mb-[23px] text-[#545454]">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+            <!-- stars -->
+            <div class="flex gap-[4px]">
+              <img src="./output/images/star.png" width="20" height="20" alt="" >
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+            </div>
+
+          </div>
+
+          <!--  THIRD FEEDBACK-->
+          <div class="feedback flex flex-col p-[25px] bg-[#F1F1F1]">
+
+            <!-- TITLE -->
+            <div class="title flex justify-between items-center">
+
+              <!-- left side title -->
+              <div class="flex gap-[5px] items-center ">
+                <img src="./output/images/mark.png" alt="" width="40">
+                <div>
+                  <h3 class="text-[#1C1C1C] montserrat size-20 font-semibold">Mark Brown</h3>
+                  <p class="lato font-normal size-16 text-[#545454]">Dental Patient</p>
+                </div>
+
+              </div>
+
+              <!-- Quotations -->
+              <img src="./output/images/quote.png" height="30" alt="" width="40" >
+
+            </div>
+
+            <!-- paragraph -->
+            <p class="lato font-normal size-16 mt-[20px] mb-[23px] text-[#545454]">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+            <!-- stars -->
+            <div class="flex gap-[4px]">
+              <img src="./output/images/star.png" width="20" height="20" alt="" >
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+            </div>
+
+          </div>
+
+          <!-- FOURTH FEEDBACK -->
+          <div class="feedback flex flex-col p-[25px] bg-[#F1F1F1]">
+
+            <!-- TITLE -->
+            <div class="title flex justify-between items-center">
+
+              <!-- left side title -->
+              <div class="flex gap-[5px] items-center ">
+                <img src="./output/images/vanseena.png" alt="" width="40">
+                <div>
+                  <h3 class="text-[#1C1C1C] montserrat size-20 font-semibold">Vanseena Adams</h3>
+                  <p class="lato font-normal size-16 text-[#545454]">Dental Patient</p>
+                </div>
+
+              </div>
+
+              <!-- Quotations -->
+              <img src="./output/images/quote.png" height="30" alt="" width="40" >
+
+            </div>
+
+            <!-- paragraph -->
+            <p class="lato font-normal size-16 mt-[20px] mb-[23px] text-[#545454] max-w-[490px]">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+            <!-- stars -->
+            <div class="flex gap-[4px]">
+              <img src="./output/images/star.png" width="20" height="20" alt="" >
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+              <img src="./output/images/star.png" width="20" height="20" alt="">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+      <!-- END OF FEEDBACK SECTION -->
+
+      <!-- BLOOD SECTION -->
+      <section class="blood-section flex flex-col justify-center items-center relative">
+          <h3 class="tracking-[0.415em] mb-[10px] text-center borders text-[#1C1C1C] size-14 font-normal lato">WHY CHOOSING PHARMA</h3>
+          <p class="lato px-[20px] max-w-[660px] mb-[40px] text-center text-[#545454] size-16 font-normal">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.</p>
+
+          <div class="flex justify-center px-[20px] gap-[30px] mb-[40px] flex-wrap ">
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center px-[20px] gap-[30px] flex-wrap">
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+            <div class="flex gap-[9px]">
+              <img src="./output/images/white-tick.png" alt="">
+              <p class="lato font-normal size-16 text-[#0152A8]">Blood clotting disorder</p>
+            </div>
+    
+          </div>
+
+          <!-- patterns -->
+          <img src="./output/images/Pattern.png" alt="" class="absolute top-[0] left-[0]">
+          <img src="./output/images/Pattern1.png" alt="" class="absolute right-[245.36px] top-[88.07px] ">
+          <img src="./output/images/Pattern2.png" alt="" class="absolute bottom-0 right-0">
+      </section>
+      <!-- END OF BLOOD SECTION -->
+
+      <!-- DOCTOR'S SECTION -->
+      <section class="doctor-section flex justify-center">
+        <!-- inner contents -->
+        <div class="flex flex-col w-[80%] mx-auto mt-[7rem] ">
+
+          <!-- header -->
+          <div class="flex justify-between items-center ">
+            <div class="flex flex-col gap-[16px]">
+              <h3 class="lato text-white size-14 font-normal self-start borders px-[10px] tracking-[0.415em]">MEDICAL EXPERTS</h3>
+              <h2 class="montserrat size-30 font-semibold text-white">The Professional Doctors</h2>
+            </div>
+            <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-[#0FE3AF] text-[#0152AB]  ">View All Doctors</button>
+          </div>
+
+          <!-- image gallery -->
+          <div class="image-gallery flex justify-between items-center mt-[60px] gap-[30px]">
+            <!-- image 1 -->
+            <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
+              <img src="./output/images/gal1.png" alt="">
+              <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Vanseena Adams</h3>
+              <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
+
+              <!-- links icons -->
+              <div class="flex gap-[30px] justify-center items-center mt-[20px]">
+                <img src="./output/images/instagram.png" alt="">
+                <img src="./output/images/facebook.png" alt="">
+                <img src="./output/images/twitter.png" alt="">
+              </div>
+            </div>
+
+            <!-- image 2 -->
+            <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
+              <img src="./output/images/gal2.png" alt="">
+              <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Dr. Helen Wilmore</h3>
+              <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
+
+              <!-- links icons -->
+              <div class="flex gap-[30px] justify-center items-center mt-[20px]">
+                <img src="./output/images/facebook.png" alt="">
+                <img src="./output/images/twitter.png" alt="">
+              </div>
+            </div>
+
+            <!-- image 3 -->
+            <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
+              <img src="./output/images/gal3.png" alt="">
+              <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Dr. Kate Winslot</h3>
+              <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
+
+              <!-- links icons -->
+              <div class="flex gap-[30px] justify-center items-center mt-[20px]">
+                <img src="./output/images/facebook.png" alt="">
+                <img src="./output/images/twitter.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Years counts -->
+          <div class="flex flex-wrap gap-[20px] justify-between items-center p-[30px] count mt-[4rem]">
+
+            <!-- year 1 -->
+            <div class="flex flex-col gap-[10px] items-center">
+              <h2 class="montserat font-semibold      size-50 text-white">25</h2>
+              <h4 class="year lato font-normal tracking-[0.415em] text-white size-14 text-center mb-0"> Years</h4>
+              <h4 class="lato font-normal borders tracking-[0.415em] text-white size-14 text-center mt-0">Experience</h4>
+            </div>
+
+            <!-- year 2 -->
+            <div class="flex flex-col gap-[10px] items-center">
+              <h2 class="montserat font-semibold      size-50 text-white">893</h2>
+              <h4 class="year lato font-normal tracking-[0.415em] block-end text-white size-14 text-center mb-0">Medicament
+               
+               </h4>
+              <h4 class="lato font-normal borders tracking-[0.415em] text-white size-14 text-center mt-0"> Invented</h4>
+            </div>
+
+            <!-- year 3 -->
+            <div class="flex flex-col gap-[10px] items-center">
+              <h2 class="montserat font-semibold size-50 text-white">73</h2>
+              <h4 class="year lato font-normal tracking-[0.415em] text-white size-14 text-center mb-0 block-end"> AWARDS </h4>
+              <h4 class="lato font-normal borders tracking-[0.415em] text-white size-14 text-center mt-0">WINNED</h4>
+            </div>
+
+            <!-- year 4 -->
+            <div class="flex flex-col gap-[10px] items-center">
+              <h2 class="montserat font-semibold      size-50 text-white">673 K</h2>
+              <h4 class="year lato font-normal tracking-[0.415em] text-white size-14 text-center mb-0"> HAPPY</h4>
+              <h4 class="lato font-normal borders tracking-[0.415em] text-white size-14 text-center mt-0">CLIENTS</h4>
+            </div>
+            
+            <!-- year 5 -->
+            <div class="flex flex-col gap-[10px] items-center">
+              <h2 class="montserat font-semibold      size-50 text-white">751</h2>
+              <h4 class="year lato block-end font-normal tracking-[0.415em] text-white size-14 text-center mb-0">PHARMACIES</h4>
+              <h4 class="lato font-normal borders tracking-[0.415em] text-white size-14 text-center mt-0">PARTNERS</h4>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- END OF DOCTOR'S SECTION -->
+
+      <!-- ARTICLE'S SECTION -->
+      <section class="article-section flex flex-col w-[80%] mx-auto justify-center py-20">
+        <div class="flex justify-between items-center ">
+          <div class="flex flex-col gap-[16px]">
+            <h3 class="lato size-14 font-normal borders text-[#1C1C1C] self-start px-[10px] tracking-[0.414em] ">NEWS UPDATE</h3>
+            <h2 class="montserrat size-30 font-semibold text-[#1C1C1C]  ">Latest Healthcare Article</h2>
+          </div>
+          <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-white text-[#0152A8] btn border-[#F5F5F5] ">Read All News</button>
+        </div>
+
+        <div class="article-container grid grid-cols-2 mt-[30px] gap-[20px]">
+
+          <!-- article 1 -->
+          <div class="flex
+           gap-[15px]">
+          <img src="./output/images/article1.png" alt="">
+          <!-- article text -->
+          <div class="flex flex-col items-center justify-center">
+            <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+            <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">Open letter to the residents of Ellsworth, Maine
+            </h3>
+          </div>
+
+          </div>
+
+          <!-- article 2 -->
+          <div class="flex
+          gap-[15px]">
+         <img src="./output/images/article2.png" alt="">
+         <!-- article text -->
+         <div class="flex flex-col items-center justify-center">
+           <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+           <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">What is a normal phenotype for aging mice?
+
+           </h3>
+         </div>
+
+         </div>
+
+         <!-- article 3 -->
+         <div class="flex
+         gap-[15px]">
+        <img src="./output/images/article3.png" alt="">
+        <!-- article text -->
+        <div class="flex flex-col items-center justify-center">
+          <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+          <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">It was popularised inner the with the release of containing.
+          </h3>
+        </div>
+
+        </div>
+
+        <!-- article 4 -->
+        <div class="flex
+        gap-[15px]">
+       <img src="./output/images/article4.png" alt="">
+       <!-- article text -->
+       <div class="flex flex-col items-center justify-center">
+         <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+         <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">The Versatile Mouse Model for Rare Disease Research
+         </h3>
+       </div>
+
+       </div>
+          
+
+        </div>
+      </section>
+      <!-- END OF ARTICLE'S SECTION -->
+
+      <!-- BEGINNING OF FOOTER SECTION -->
+      <footer class="bg-[#E5F2EF]  mx-auto my-auto relative flex items-center justify-center py-[20px]">
+        <section class="w-[88.5%] mx-auto flex flex-col items-center justify-center ">
+          
+          <!-- line 1 -->
+          <div class="footer-icons flex justify-between items-center  w-[100%] mt-[4rem]">
+
+            <!-- logo -->
+            <div class=" footer-logo flex items-center">
+              <img src="./output/images/Icon.png" alt="">
+              <h3 class="text-[#1C1C1C] size-30 inter font-semibold">Pharma</h3>
+            </div>
+
+            <!-- contact details -->
+            <div class="contact-details footer-icon flex justify-between items-center gap-[30px]">
+
+              <div class=" col flex justify-between items-center gap-[30px]">
+              <!-- call -->
+              <div class="one flex items-center gap-[8px]">
+                <div class="w-[50px] h-[50px] rounded-[50px] bg-[#0FE3AF] flex items-center justify-center"><img src="./output/images/caller.png" alt="" width="25"></div>
+                <p class="lato whitespace-nowrap font-normal size-16 text-[#545454]">(+22) 123 - 4567 - 900)</p>
+              </div>
+
+              <!-- message -->
+              <div class=" two flex items-center gap-[8px]">
+                <div class="w-[50px] h-[50px] rounded-[50px] bg-[#0FE3AF] flex items-center justify-center"><img src="./output/images/ticker.png" alt="" width="25"></div>
+                <p class="lato font-normal size-16 text-[#545454]">support@doctorate.com</p>
+              </div>
+            </div>
+
+              <!-- socials -->
+              <div class="three flex justify-between items-center gap-[20px]">
+                <img src="./output/images/Insta.png" alt="">
+                <img src="./output/images/Fb.png" alt="">
+                <img src="./output/images/Twiter.png" alt="">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- line 2 -->
+          <div class=" line-2 mt-[50px] grid grid-cols-4  justify-between w-[100%] gap-[30px] ">
+            <h3 class="montserrat font-semibold size-30 text-[1C1C1C] max-w-[369px] flex-1 ">“A Simple Story About
+              The Doctorate Medical Center & Health Care Foundation
+            </h3>
+
+            <!--explore  -->
+            <ul class="explore flex flex-col gap-[5px] flex-1">
+              <li class="montserrat size-20 font-semibold text-[#1C1C1C]">Explore</li>
+              <li class="text-[#545454] size-16 lato font-normal">home</li>
+              <li class="text-[#545454] size-16 lato font-normal">Services</li>
+              <li class="text-[#545454] size-16 lato font-normal">About us</li>
+              <li class="text-[#545454] size-16 lato font-normal">Testimonials</li>
+              <li class="text-[#545454] size-16 lato font-normal">News </li>
+            </ul>
+
+            <!-- utility  -->
+            <ul class="explore flex flex-col gap-[5px] flex-1">
+              <li class="montserrat size-20 font-semibold text-[#1C1C1C]">Utility Pages</li>
+              <li class="text-[#545454] size-16 lato font-normal">Style Guides</li>
+              <li class="text-[#545454] size-16 lato font-normal">Changelog</li>
+              <li class="text-[#545454] size-16 lato font-normal">Licenses</li>
+              <li class="text-[#545454] size-16 lato font-normal">Protected Page</li>
+              <li class="text-[#545454] size-16 lato font-normal">404 Page</li>
+            </ul>
+
+            <div class="flex flex-col gap-[16px] flex-1">
+              <h4 class="montserrat size-20 font-semibold text-[#1C1C1C]">Book an appointment</h4>
+              <p class="text-[#545454] size-16 lato font-normal max-w-[300px]">It is a long established fact that a reader will be distracted</p>
+              <input type="text" placeholder="your email address" class="h-[60px]  flex items-center px-[25px]">
+              <button class="inter size-16 font-medium text-white self-start px-[30px] py-[17px] bg-[#0152A8]">Submit</button>
+            </div> 
+
+
+          </div>
+        </section>
+        
+        <!-- patterns -->
+        <img src="./output/images/footer-pattern.png" alt="" class="absolute top-0 left-0">
+        <img src="./output/images/footer-pattern1.png" alt="" class="absolute bottom-0 right-0 flex items-center justify-center">
+      </footer>
+      <!-- END OF FOOTER SECTION
+       -->
+
+
+       
+    </main>
+  </body>
+</html>
