@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap");
 /* 5px 9vw 22rem */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 * {
   margin: 0;
@@ -24,8 +23,8 @@ body {
   display: none;
 }
 nav {
-  margin-top: 40px;
-  padding-top: 20px;
+  /* margin-top: 20px; */
+  /* padding-block: 20px; */
 }
 nav ul li {
   font-size: clamp(14px, 1vw, 18px);
@@ -35,6 +34,82 @@ nav ul li:hover {
   color: #0152a8;
 }
 /* END OF THE HEADER */
+
+/* HAMBURGER MENU */
+
+/* HAMBURGER MENU */
+.hamburger {
+  position: relative;
+  width: 20px;
+  display: none;
+  border: none;
+}
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-3px, 7px);
+}
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-5px, -10px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.mobile-nav {
+  position: fixed;
+  top: 60px;
+  left: 100%;
+  width: 70%;
+  min-height: 400px;
+  display: block;
+  background-color: rgba(1, 82, 168, 1);
+  color: #ffffff;
+  padding-top: 20px;
+  z-index: 98;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.mobile-nav.is-active {
+  left: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.mobile-nav a {
+  text-decoration: none;
+}
+.mobile-nav li {
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.mobile-nav li:hover {
+  background-color: #0152A8;
+}
+
+.dropdown-menu {
+    display: none;
+  }
+  
+  .page-and-drop-down:hover > .dropdown-menu,
+  .dropdown-menu.show {
+    display: block !important;
+  }
+
+/* END OF HAMBURGER MENU */
 
 /* BEGINNING OF HERO */
 .hero-section {
@@ -88,6 +163,11 @@ img {
 }
 /* END OF ABOUT SECTION */
 
+.blue-hover:hover{
+  color : #0152A8;
+  border-bottom: 2px solid  #0152A8;
+}
+
 /* BEGINNING OF APPOINTMENT SECTION */
 .appoint-section {
   background-image: url(../output/images/appointment-img.png);
@@ -117,8 +197,8 @@ img {
   background: #0152a8;
   /* height: 40rem; */
 }
-.bb{
-  border: 1px solid #E1E1E1;
+.bb {
+  border: 1px solid #e1e1e1;
 }
 
 .year {
@@ -137,7 +217,7 @@ img {
 .btn {
   border: 2px solid #f5f5f5;
 }
-.btn-px{
+.btn-px {
   padding-inline: clamp(12px, 2vw, 17px);
 }
 /* footer */
@@ -149,8 +229,8 @@ footer input::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  align-self:center;
-  color: #B9B9B9;
+  align-self: center;
+  color: #b9b9b9;
 }
 
 /* BEGINNING OF CUSTOM CLAMP STYLING */
@@ -179,7 +259,7 @@ footer input::placeholder {
 .size-30 {
   font-size: clamp(16px, 2vw, 30px);
 }
-.size-40{
+.size-40 {
   font-size: clamp(30px, 5vw, 40px);
 }
 .size-50 {
@@ -236,7 +316,6 @@ footer input::placeholder {
 .frenchcanon {
   font-family: "IM FELL French Canon SC";
 }
-
 
 /* HAMBURGER MENU */
 * {
@@ -306,9 +385,20 @@ a {
   font-weight: 500;
   color: #482ff7;
 }
-
+.img {
+  width: 100%;
+}
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 1070px) {
+  .col {
+    flex-direction: column;
+  }
+  .w100 {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 842px) {
   .ul li,
   .hide,
@@ -316,7 +406,7 @@ a {
     display: none;
   }
   .hamburger {
-    display: flex;
+    display: block;
   }
   .nav-menu {
     position: fixed;
@@ -355,8 +445,6 @@ a {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -367,7 +455,7 @@ a {
   nav {
     margin-top: 20px;
   }
-  .line-one{
+  .line-one {
     flex-direction: column;
   }
 }
@@ -412,7 +500,7 @@ a {
   .image-gallery {
     flex-direction: column;
   }
-  .image-gallery div{
+  .image-gallery div {
     width: 100%;
   }
 }
@@ -431,72 +519,73 @@ a {
   }
 }
 @media only screen and (max-width: 924px) {
-  .contact-details, .footer-icons,.col{
+  .contact-details,
+  .footer-icons,
+  .col {
     flex-direction: column;
   }
-  .one, .two, .three, .footer-logo, .contact-details{
+  .one,
+  .two,
+  .three,
+  .footer-logo,
+  .contact-details {
     align-self: flex-start !important;
   }
-
 }
 @media only screen and (max-width: 1092px) {
-  .line-2{
+  .line-2 {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
-
-
 @media only screen and (max-width: 864px) {
-  .line-2{
+  .line-2 {
     grid-template-columns: repeat(1, 1fr) !important;
   }
-  footer input{
+  footer input {
     align-self: flex-start;
   }
-  .leaders-texts{
-    flex-direction: column;  
+  .leaders-texts {
+    flex-direction: column;
   }
-  .lead{
+  .lead {
     align-self: center;
   }
-  .line-2-grid{
-    grid-template-columns: repeat(2,1fr);
+  .line-2-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .team-doctorate{
+  .team-doctorate {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
 @media only screen and (max-width: 685px) {
-.team-doctorate{
-  grid-template-columns: repeat(1, 1fr);
+  .team-doctorate {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-}
-
-
-
-
 
 
 
 /* ABOUT.CSS PAGE */
-.about-hero{
-  background-image:url(../../../output/images/about-hero.png) ;
-  margin-top: 1px;
+.about-hero {
+  background-image: url(../../../output/images/about-hero.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 129px);
 }
 
-.blue-border{
-  border-inline-start:9px solid #0152A8 ;
+.blue-border {
+  border-inline-start: 9px solid #0152a8;
 }
-.brown-border{
-  border: 1px solid #CECECE;
+.brown-border {
+  border: 1px solid #cecece;
 }
-.flex-2{
+.flex-2 {
   flex: 2;
+}
+
+.trans-white {
+  background: rgba(255, 255, 255, 0.86);
 }

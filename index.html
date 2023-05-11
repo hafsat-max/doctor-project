@@ -32,7 +32,7 @@
 
           <!-- Phone number 1 -->
           <div class="flex gap-[9px]">
-            <img src="./output/images/call.png" alt="" class="icon-width" />
+            <img src="./output/images/caller.png" alt="" class="icon-width" />
             <p class="text-white font-normal size-14">(404) 850 - 7080</p>
           </div>
 
@@ -51,41 +51,84 @@
 
         <!-- nav lists -->
         <ul class=" ul flex size-18 items-center gap-[15px]">
-          <a href="">
-            <li>Home</li>
+          <a href="./index.html">
+            <li class="py-[20px] blue-hover" >Home</li>
           </a>
 
           <a href="./pages/about.html">
-            <li>About</li>
+            <li  class="py-[20px] blue-hover">About</li>
           </a>
 
           <a href="./pages/services.html">
-            <li>Service</li>
+            <li class="py-[20px] blue-hover">Service</li>
           </a>
 
-          <a href="" class="flex items-center gap-[3px] hide">
-            <li>Pages</li>
+          <li style="position: relative;" class="page-and-drop-down">
+            <a href="" class="pages size-16" >Pages
+            <img src="../images/drop-down-icon.png" alt="">
+            </a>
+            
+            <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #0152A8;" class="dropdown-menu"></div>
+            
+            <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
+            <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #0152A8; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
+            
+            
+            <li style="list-style-type: none;" style="margin: 0;">
+            <a href="./pages/services.html" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Services</span></a>
+            </li>
+            <li style="margin: 0;">
+            <a href="./pages/blog.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog</span></a>
+            </li>
+            <li style="margin: 0;">
+            <a href="./pages/team.html" aria-current="page" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Team</span></a>
+            </li>
+            <li style="margin: 0;">
+            <a href="./pages/appointment.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Appointment</span></a>
+            </li>
+            
+            <li style="margin: 0;">
+            <a href="./pages/pricing.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Pricing</span></a>
+            </li>
+            
+            <li style="margin: 0;">
+            <a href="./pages/change.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Change Log</span></a>
+            </li>
+            
+            </ul>
+            </div>
+            </li>
+
             <img src="./output/images/tick.png" alt="" class="hide" />
           </a>
-          <a href="">
-            <li class="whitespace-nowrap">Contact us</li>
+          <a href="./pages/contact.html">
+            <li class="whitespace-nowrap py-[20px] blue-hover">Contact us</li>
           </a>
         </ul>
 
         <!-- call to action button -->
-        <button
-          class="cta-pad bg-[#0FE3AF] size-18 font-semibold text-[#363636]"
-        >
-          Appointment
-        </button>
+        <a href="./pages/appointment.html">
+          <button
+            class="cta-pad bg-[#0FE3AF] size-18 font-semibold text-[#363636]"
+          >
+            Appointment
+          </button>
+        </a>
 
         <!-- hamburger -->
-        <img
-          src="./output/images/hamburger.svg"
-          alt=""
-          width="50"
-          class="none hamburger"
-        />
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <div class="mobile-nav">
+          <ol>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+            <li><a href="./pages/contact.html">Contact Us</a></li>
+          </ol>
+        </div>
       </nav>
     </header>
 
@@ -114,11 +157,14 @@
               technologies to restore you to pain-free health quickly and
               easily.
             </p>
-            <button
-              class="bg-[#0152A8] text-white font-medium size-14 self-start cta-pad mt-[14px]"
-            >
+            <a href="./pages/services_single.html">
+              <button
+                class="bg-[#0152A8] text-white font-medium size-14 self-start cta-pad mt-[14px]"
+              >
               Get Started
             </button>
+
+            </a>
           </div>
 
           <!-- image container -->
@@ -166,9 +212,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex items-center gap-[12px]">
-                <h4 class="text-[#363636] size-16 font-medium inter">
-                  Read More
-                </h4>
+                <a href="./pages/blog.html">
+                  <h4 class="text-[#363636] size-16 font-medium inter">
+                    Read More
+                  </h4>
+                </a>
                 <img src="./output/images/grey.png" width="16" alt="" />
               </div>
             </div>
@@ -191,9 +239,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex gap-[12px] items-center">
+                <a href="./pages/blog.html">
                 <h4 class="text-[#363636] size-16 font-medium inter">
                   Read More
                 </h4>
+                </a>
                 <img src="./output/images/green.png" width="16" alt="" />
               </div>
             </div>
@@ -219,9 +269,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex gap-[12px] items-center">
+                <a href="./pages/blog.html">
                 <h4 class="text-[#363636] size-16 font-medium inter">
                   Read More
                 </h4>
+                </a>
                 <img src="./output/images/grey.png" width="16" alt="" />
               </div>
             </div>
@@ -255,9 +307,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex gap-[12px] items-center">
+                <a href="./pages/blog.html">
                 <h4 class="text-[#363636] size-16 font-medium inter">
                   Read More
                 </h4>
+                </a>
                 <img src="./output/images/grey.png" width="16" alt="" />
               </div>
             </div>
@@ -288,9 +342,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex gap-[12px] items-center">
+                <a href="./pages/blog.html">
                 <h4 class="text-[#363636] size-16 font-medium inter">
                   Read More
                 </h4>
+                </a>
                 <img src="./output/images/grey.png" width="16" alt="" />
               </div>
             </div>
@@ -313,9 +369,11 @@
 
               <!-- READ MORE -->
               <div class="readmore flex gap-[12px] items-center">
+                <a href="./pages/blog.html">
                 <h4 class="text-[#363636] size-16 font-medium inter">
                   Read More
                 </h4>
+                </a>
                 <img src="./output/images/grey.png" width="16" alt="" />
               </div>
             </div>
@@ -354,9 +412,11 @@
           </div>
 
           <!--About button  -->
+          <a href="./pages/about.html">
           <button class="bg-[#0152A8] text-white self-start px-[30px] py-[17px] inter size-16 font-medium">
             More About Us
           </button>
+          </a>
         </div>
       </section>
       <!--  END OF ABOUT SECTION-->
@@ -411,7 +471,10 @@
       <!-- Beginning of Appointment section -->
       <section class="px-[20px] appoint-section h-[412px]  w-[80%] mx-auto flex flex-col justify-center items-center mt-[70px] gap-[23px] mb-[90px]">
         <h3 class="montserrat text-center text-white size-30 font-semibold max-w-[450px] ">Schedule an imperson or virtual appointment today</h3>
-         <button class="text-center cta-pad bg-[#0FE3AF] px-[20px] py-[17px] inter font-medium size-12 text-[#1C1C1C] w-[200px] whitespace-nowrap">Book an appointment</button>
+
+        <a href="./pages/appointment.html">
+          <button class="text-center cta-pad bg-[#0FE3AF] px-[20px] py-[17px] inter font-medium size-12 text-[#1C1C1C] w-[200px] whitespace-nowrap">Book an appointment</button>
+        </a>
       </section>
       <!-- End of Appointment section -->
 
@@ -438,19 +501,16 @@
               <p class="text-[#1C1C1C] size-16 font-normal lato">Professional Experts</p>
             </div>
 
+            <a href="./pages/team.html">
             <button class="size-16 text-white font-medium inter self-start bg-[#0152A8] py-[17px] px-[40px]">Discover Now</button>
+          </a>
           </div>
           <!-- IMAGE SIDE -->
-          <div class="special-img flex flex-1 gap-[6px] ">
-            <!-- image one -->
-            <div class="flex-1 img400">
-              <img src="./output/images/doctor1.png" alt="" class="object-cover full-img" >
-            </div>
-
-            <!-- image two -->
-            <div class="flex-1 img400">
-              <img src="./output/images/doctor2.png" alt="" class="object-cover full-img">
-            </div>
+          <div class="special-img flex flex-1 gap-[6px] items-center bg-[url('./output/images/double-img.png')] bg-center bg-cover relative max-[986px]:hidden">
+              <div class="relative top-[12rem] left-[15rem] bg-black flex flex-col gap-[5px] p-[10px]">
+                <h3 class="montserrat size-20 font-semibold text-white">Mark Broownn</h3>
+                <p class="lato text-[#9A9A9A] size-16 font-normal">Multispecialist</p>
+              </div>
           </div>
         </section>
       <!-- END OF SPECIAL CARE SECTION -->
@@ -667,14 +727,19 @@
               <h3 class="lato text-white size-14 font-normal self-start borders px-[10px] tracking-[0.415em]">MEDICAL EXPERTS</h3>
               <h2 class="montserrat size-30 font-semibold text-white">The Professional Doctors</h2>
             </div>
+            <a href="./pages/team.html">
             <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-[#0FE3AF] text-[#0152AB]  ">View All Doctors</button>
+          </a>
           </div>
 
           <!-- image gallery -->
           <div class="image-gallery flex justify-between items-center mt-[60px] gap-[30px]">
             <!-- image 1 -->
+            
             <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
-              <img src="./output/images/gal1.png" alt="">
+              <a href="./pages/teamsingle.html">
+                <img src="./output/images/gal1.png" alt="">
+              </a>
               <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Vanseena Adams</h3>
               <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
 
@@ -688,7 +753,9 @@
 
             <!-- image 2 -->
             <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
-              <img src="./output/images/gal2.png" alt="">
+              <a href="./pages/teamsingle.html">
+                <img src="./output/images/gal2.png" alt="">
+              </a>
               <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Dr. Helen Wilmore</h3>
               <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
 
@@ -701,7 +768,9 @@
 
             <!-- image 3 -->
             <div class=" flex flex-col p-[30px] bg-[#004A99] w-[33%]">
-              <img src="./output/images/gal3.png" alt="">
+              <a href="./pages/teamsingle.html">
+                <img src="./output/images/gal3.png" alt="">
+              </a>
               <h3 class="text-center text-white size-20 montserrat font-semibold mt-[15px]">Dr. Kate Winslot</h3>
               <h4 class="text-center lato size-16 font-normal text-white mt-[5px]">Dental Patient</h4>
 
@@ -767,15 +836,19 @@
             <h3 class="lato size-14 font-normal borders text-[#1C1C1C] self-start px-[10px] tracking-[0.414em] ">NEWS UPDATE</h3>
             <h2 class="montserrat size-30 font-semibold text-[#1C1C1C]  ">Latest Healthcare Article</h2>
           </div>
-          <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-white text-[#0152A8] btn border-[#F5F5F5] ">Read All News</button>
+          <a href="./pages/blog.html">
+            <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-white text-[#0152A8] btn border-[#F5F5F5] ">Read All News</button>
+          </a>
         </div>
 
-        <div class="article-container grid grid-cols-2 mt-[30px] gap-[20px]">
+        <div class="article-container grid grid-cols-2 mt-[30px] gap-[20px]"> 
 
           <!-- article 1 -->
           <div class="flex
            gap-[15px]">
-          <img src="./output/images/article1.png" alt="">
+           <a href="./pages/blog.html">
+             <img src="./output/images/article1.png" alt="">
+           </a>
           <!-- article text -->
           <div class="flex flex-col items-center justify-center">
             <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
@@ -788,7 +861,9 @@
           <!-- article 2 -->
           <div class="flex
           gap-[15px]">
-         <img src="./output/images/article2.png" alt="">
+          <a href="./pages/blog.html">
+            <img src="./output/images/article2.png" alt="" class="img">
+          </a>
          <!-- article text -->
          <div class="flex flex-col items-center justify-center">
            <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
@@ -802,11 +877,13 @@
          <!-- article 3 -->
          <div class="flex
          gap-[15px]">
-        <img src="./output/images/article3.png" alt="">
+         <a href="./pages/blog.html">
+           <img src="./output/images/article7.png" alt="">
+         </a>
         <!-- article text -->
         <div class="flex flex-col items-center justify-center">
           <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
-          <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">It was popularised inner the with the release of containing.
+          <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">Open letter to the residents of Ellsworth, Maine
           </h3>
         </div>
 
@@ -815,16 +892,18 @@
         <!-- article 4 -->
         <div class="flex
         gap-[15px]">
-       <img src="./output/images/article4.png" alt="">
+        <a href="./pages/blog.html">
+          <img src="./output/images/blog1.png" alt="" class="img">
+        </a>
        <!-- article text -->
        <div class="flex flex-col items-center justify-center">
          <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
-         <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">The Versatile Mouse Model for Rare Disease Research
+         <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">What is a normal phenotype for aging mice?
+
          </h3>
        </div>
 
        </div>
-          
 
         </div>
       </section>
@@ -877,26 +956,50 @@
             </h3>
 
             <!--explore  -->
-            <ul class="explore flex flex-col gap-[5px] flex-1">
+            <ul class="explore flex flex-col gap-[5px] flex-1" style="z-index: 100;">
               <li class="montserrat size-20 font-semibold text-[#1C1C1C]">Explore</li>
-              <li class="text-[#545454] size-16 lato font-normal">home</li>
-              <li class="text-[#545454] size-16 lato font-normal">Services</li>
-              <li class="text-[#545454] size-16 lato font-normal">About us</li>
-              <li class="text-[#545454] size-16 lato font-normal">Testimonials</li>
-              <li class="text-[#545454] size-16 lato font-normal">News </li>
-            </ul>
+                        
+              <li >
+                <a href="./index.html" class="text-[#545454] size-16 lato font-normal">Home</a>
+                </li>
+
+              <li >
+                <a href="../pages/services.html" class="text-[#545454] size-16 lato font-normal">Services</a>
+                </li>
+                
+                <li >
+                  <a href="" class="text-[#545454] size-16 lato font-normal">About Us</a>
+                  </li>  
+
+              <li >
+                <a href="../pages/blog.html" class="text-[#545454] size-16 lato font-normal">Testimonials</a>
+                </li>            
+                
+                <li >
+                  <a href="../pages/services.html" class="text-[#545454] size-16 lato font-normal">News</a>
+                  </li>       
+                  </ul>
 
             <!-- utility  -->
-            <ul class="explore flex flex-col gap-[5px] flex-1">
+            <ul class="explore flex flex-col gap-[5px] flex-1" style="z-index: 100;">
               <li class="montserrat size-20 font-semibold text-[#1C1C1C]">Utility Pages</li>
               <li class="text-[#545454] size-16 lato font-normal">Style Guides</li>
-              <li class="text-[#545454] size-16 lato font-normal">Changelog</li>
-              <li class="text-[#545454] size-16 lato font-normal">Licenses</li>
-              <li class="text-[#545454] size-16 lato font-normal">Protected Page</li>
-              <li class="text-[#545454] size-16 lato font-normal">404 Page</li>
-            </ul>
 
-            <div class="flex flex-col gap-[16px] flex-1">
+              <li >
+                <a href="../pages/change.html" class="text-[#545454] size-16 lato font-normal">Change Log</a>
+                </li>
+                <li >
+                  <a href="../pages/services.html" class="text-[#545454] size-16 lato font-normal">Licenses</a>
+                  </li>             
+                  <li >
+                    <a href="../pages/services.html" class="text-[#545454] size-16 lato font-normal">Protected Page</a>
+                    </li>
+                    <li >
+                      <a href="../pages/error.html" class="text-[#545454] size-16 lato font-normal">Error 404</a>
+                      </li>
+                       </ul>
+
+            <div class="flex flex-col gap-[16px] flex-1" style="z-index: 100;">
               <h4 class="montserrat size-20 font-semibold text-[#1C1C1C]">Book an appointment</h4>
               <p class="text-[#545454] size-16 lato font-normal max-w-[300px]">It is a long established fact that a reader will be distracted</p>
               <input type="text" placeholder="your email address" class="h-[60px]  flex items-center px-[25px]">
@@ -917,5 +1020,6 @@
 
        
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

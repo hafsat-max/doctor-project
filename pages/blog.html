@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Appointment</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="../output/styles.css" />
 </head>
 
@@ -119,193 +119,101 @@
     </header>
 
     <main>
-        <section class=" w-[90%] mx-auto bg-[#DCEDFE] h-[300px] flex justify-center">
-            <h1 class="montserrat text-[#1C1C1C] text-center size-40 font-bold max-w-[590px] mt-[30px]">
-                Wide network of healthcare solutions
+
+        <!-- Blog hero -->
+        <section class="bg-[url('../output/images/stetho.png')] h-[200px] bg-center flex justify-center items-center w-[95%] mx-auto">
+            <h1 class="text-[#1C1C1C] text-center montserrat size-40 font-bold">
+                Blog
             </h1>
         </section>
 
-        <!-- APPOINTMRNT FORM -->
-        <section class="w-[70%] mx-auto bg-[#F1F1F1] flex flex-col gap-[30px] mt-[-120px] p-[50px]">
-            <h3 class="lato self-center tracking-[0.415em] p-[2px] font-normal borders text-[#1C1C1C] text-center size-14">
-                Appointment
-            </h3>
-            <h2 class="text-[#1C1C1C] text-center montserrat size-40 font-bold">
-                Consult with Our Experts
-            </h2>
-            <form action="" class="flex flex-col justify-center items-center">
-                <!-- input line 1 -->
-                <div class="flex gap-[20px] w-[100%] mx-auto mb-[20px] flex-wrap max-[947px]:flex-col">
-                    <span class="flex-1 relative">
-              <input
-                type="text"
-                name=""
-                placeholder="Choose Department"
-                class="flex-1 p-[10px] w-[100%] placeholder:text-[#545454] inter font-normal size-16"
-              />
-              <img
-                src="../output/images/dropdown.png"
-                alt=""
-                class="absolute top-[14px] right-[10px]"
-              />
-            </span>
-                    <span class="flex-1 relative">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Choose Doctor"
-                class="flex-1 p-[10px] w-[100%] placeholder:text-[#545454] inter font-normal size-16"
-              />
-              <img
-                src="../output/images/dropdown.png"
-                alt=""
-                class="absolute top-[14px] right-[10px]"
-              />
-            </span>
+
+        <!-- ARTICLE'S SECTION -->
+        <section class="article-section flex flex-col w-[80%] mx-auto justify-center py-20">
+            <div class="flex justify-between items-center ">
+                <div class="flex flex-col gap-[16px]">
+                    <h3 class="lato size-14 font-normal borders text-[#1C1C1C] self-start px-[10px] tracking-[0.414em] ">NEWS UPDATE</h3>
+                    <h2 class="montserrat size-30 font-semibold text-[#1C1C1C]  ">Latest Healthcare Article</h2>
+                </div>
+                <a href="./pages/blog.html">
+                    <button class="btn-px py-[17px] inter font-medium size-16 text-center bg-white text-[#0152A8] btn border-[#F5F5F5] ">Read All News</button>
+                </a>
+            </div>
+
+            <div class="article-container grid grid-cols-2 mt-[30px] gap-[20px]">
+
+                <!-- article 1 -->
+                <div class="flex
+           gap-[15px]">
+                    <a href="./blog.html">
+                        <img src="../output/images/article1.png" alt="">
+                    </a>
+                    <!-- article text -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+                        <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">Open letter to the residents of Ellsworth, Maine
+                        </h3>
+                    </div>
+
                 </div>
 
-                <!-- input line 2 -->
-                <div class="flex gap-[20px] w-[100%] mx-auto mb-[20px] flex-wrap">
-                    <input type="text" name="" placeholder="Enter your name here" class="flex-1 p-[10px] placeholder:text-[#545454] inter font-normal size-16" />
-                    <input type="text" name="" id="" placeholder="Email address" class="flex-1 p-[10px] placeholder:text-[#545454] inter font-normal size-16" />
+                <!-- article 2 -->
+                <div class="flex
+          gap-[15px]">
+                    <a href="./blog.html">
+                        <img src="../output/images/article2.png" alt="" class="img">
+                    </a>
+                    <!-- article text -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+                        <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">What is a normal phenotype for aging mice?
+
+                        </h3>
+                    </div>
+
                 </div>
 
-                <!-- input line 3 -->
-                <div class="grid grid-cols-3 max-[1260px]:grid-cols-2 max-[925px]:grid-cols-1 gap-[20px] w-[100%] mx-auto">
-                    <span class="flex-1 relative">
-              <input
-                type="text"
-                name=""
-                placeholder="Choose Department"
-                class="flex-1 p-[10px] w-[100%] placeholder:text-[#545454] inter font-normal size-16"
-              />
-              <img
-                src="../output/images/call-icon.png"
-                alt=""
-                width="20"
-                class="absolute top-[14px] right-[10px]"
-              />
-            </span>
-                    <span class="flex-1 relative">
-              <input
-                type="text"
-                name=""
-                placeholder="Choose Department"
-                class="flex-1 p-[10px] w-[100%] placeholder:text-[#545454] inter font-normal size-16"
-              />
-              <img
-                src="../output/images/Combined-Shape.png"
-                alt=""
-                width="20"
-                class="absolute top-[14px] right-[10px]"
-              />
-            </span>
-                    <span class="flex-1 relative">
-              <input
-                type="text"
-                name=""
-                placeholder="Choose Department"
-                class="flex-1 p-[10px] w-[100%] placeholder:text-[#545454] inter font-normal size-16"
-              />
-              <img
-                src="../output/images/time.png"
-                alt=""
-                width="20"
-                class="absolute top-[14px] right-[10px]"
-              />
-            </span>
+                <!-- article 3 -->
+                <div class="flex
+         gap-[15px]">
+                    <a href="./blog.html">
+                        <img src="../output/images/article7.png" alt="">
+                    </a>
+                    <!-- article text -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+                        <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">Open letter to the residents of Ellsworth, Maine
+                        </h3>
+                    </div>
+
                 </div>
 
-                <!-- appointment button -->
-                <button class="bg-[#0152A8] text-white flex items-center justify-center mt-[20px] w-[100%] py-[15px]">
-            Book Appointment Now
-          </button>
-            </form>
+                <!-- article 4 -->
+                <div class="flex
+        gap-[15px]">
+                    <a href="./blog.html">
+                        <img src="../output/images/blog1.png" alt="" class="img">
+                    </a>
+                    <!-- article text -->
+                    <div class="flex flex-col items-center justify-center">
+                        <h4 class="bordders tracking-[0.415em] lato size-14 font-normal self-start borders mt-[20px]">18 August 2023</h4>
+                        <h3 class="text-[#1C1C1C] size-20 font-medium montserrat">What is a normal phenotype for aging mice?
+
+                        </h3>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
+        <!-- END OF ARTICLE'S SECTION -->
 
-        <!-- FREQUENTLY ASKED QUESTION -->
-        <section class="flex flex-col w-[70%] mx-auto mt-[70px] pb-[70px]">
-            <h3 class="lato self-center tracking-[0.415em] p-[2px] font-normal borders text-[#1C1C1C] text-center size-14">
-                FAQ
-            </h3>
-            <h2 class="montserrat font-semibold size-30 text-center text-[#1C1C1C]">
-                Frequently Asked Questions
-            </h2>
-
-            <!-- All Questions -->
-            <div class="grid grid-cols-2 gap-[30px] mt-[40px] max-[946px]:grid-cols-1">
-                <!-- question 1 -->
-                <div class="flex flex-1 justify-between items-center brown-border py-[15px] px-[15px]">
-                    <p class="montserrat size-20 font-semibold text-[#1C1C1C]">
-                        Does a rinse or mouthwash help?
-                    </p>
-                    <img src="../output/images/addition.png" alt="" width="20" />
-                </div>
-
-                <!-- QUESTION 2 -->
-                <div class="flex flex-1 justify-between brown-border items-center py-[15px] px-[15px]">
-                    <p class="montserrat size-20 font-semibold text-[#1C1C1C]">
-                        Why do I need dental exams?
-                    </p>
-                    <img src="../output/images/addition.png" alt="" width="20" />
-                </div>
-            </div>
-
-
-            <!-- QUESTION 3 4 5 -->
-            <div class="grid grid-cols-2 justify-between gap-[30px] mt-[20px] max-[946px]:grid-cols-1">
-                <!-- Q3 -->
-                <div class="flex flex-col flex-1  brown-border items-center gap-[13px] bg-[#F1F1F1] ">
-
-                    <!-- row 1 -->
-                    <div class="flex justify-between items-center py-[10px] gap-[50px] ">
-                        <p class="montserrat size-20  font-semibold text-[#1C1C1C]">
-                            How can I fix my teeth and smile?
-                        </p>
-                        <img src="../output/images/cancel.png" alt="" width="20" class="" />
-                    </div>
-
-                    <!-- row 2 -->
-                    <p class="text-[#545454] size-14 lato font-normal p-[5px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra.
-                    </p>
-
-
-                </div>
-
-                <!-- Q4 Q5 -->
-                <div class="flex flex-col flex-1 gap-[20px]">
-
-                    <!-- QUESTION 4 -->
-                    <div class="flex justify-between brown-border items-center py-[15px] px-[15px]">
-                        <p class="montserrat size-20 font-semibold text-[#1C1C1C]">
-                            Are dental X-rays safe and needed?
-                        </p>
-                        <img src="../output/images/addition.png" alt="" width="20" />
-                    </div>
-
-                    <!-- QUESTION 5 -->
-                    <div class="flex justify-between brown-border items-center py-[15px] px-[15px]">
-                        <p class="montserrat size-20 font-semibold text-[#1C1C1C]">
-                            What are early signs of dental trouble?
-                        </p>
-                        <img src="../output/images/addition.png" alt="" width="20" />
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- QUESTION 6 -->
-            <div class="flex justify-between brown-border items-center py-[15px] px-[15px] self-start w-[48%] mt-[20px] max-[946px]:w-[100%]">
-                <p class="montserrat size-20 font-semibold text-[#1C1C1C]">
-                    Why do I need dental exams?
-                </p>
-                <img src="../output/images/addition.png" alt="" width="20" />
-            </div>
-
-
-        </section>
+        <!-- PAGINATION -->
+        <div class="w-[40%] mx-auto flex gap-[10px] pb-[30px] mt-[70px]">
+            <div class="bg-[#0152A8] w-[20px] h-[20px] text-white inter size-16 font-medium p-[20px] flex items-center justify-center">1</div>
+            <div class="bg-white w-[20px] h-[20px] text-[#1C1C1C] inter size-16 font-medium p-[20px] flex items-center justify-center borders">2</div>
+            <div class="bg-white  h-[20px] text-[#1C1C1C] inter size-16 font-medium p-[20px] flex items-center justify-center borders">Next Page</div>
+        </div>
     </main>
 
     <!-- BEGINNING OF FOOTER SECTION -->
