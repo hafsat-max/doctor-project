@@ -325,7 +325,7 @@ footer input::placeholder {
 }
 
 .size-30 {
-    font-size: clamp(16px, 2vw, 30px);
+    font-size: clamp(24px, 2vw, 30px);
 }
 
 .size-40 {

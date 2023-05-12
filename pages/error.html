@@ -57,9 +57,9 @@
                         <img src="../output/images/tick.png" alt="" width="20" class="inline">
                     </a>
 
-                    <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #0152A8;" class="dropdown-menu"></div>
+                    <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #0152A8; top: 10px" class="dropdown-menu"></div>
 
-                    <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
+                    <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 100%;">
                         <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #0152A8; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
 
 
@@ -124,17 +124,22 @@
 
     <main>
         <!-- contact hero -->
-        <section class="bg-[url('../output/images/error.png')] h-[200px] bg-center flex justify-center items-center w-[95%] mx-auto mb-[70px]">
+        <section class="bg-[url('../output/images/error-hero.png')] h-[200px] bg-center flex justify-center items-center w-[95%] mx-auto mb-[5px]">
             <h1 class="text-[#1C1C1C] text-center montserrat size-40 font-bold max-w-[500px]">
                 404 Page Not Found
             </h1>
         </section>
 
         <!-- error -->
-        <section class="flex flex-col gap-[10px] justify-center items-center">
-            <h1 class="bg-[#0152A8] montserrat font-extrabold text-[308px] text-cent ">404</h1>
-            <h3 class=" text-[#1C1C1C] font-ol monserrat text-[75px] text-center ">Oops! Page not found</h3>
-            <p class="lato text-center font-normal size-18 text-[#545454]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue pretium faucibus leo nisl nulla pharetra nullam.</p>
+        <section class="flex flex-col  justify-center items-center">
+            <h1 class="text-[#0152A8] montserrat font-extrabold text-[250px] text-center p-0">404</h1>
+            <h3 class=" text-[#1C1C1C] font-bold monserrat text-[75px] text-center ">Oops! Page not found</h3>
+            <p class="lato text-center font-normal size-18 text-[#545454] max-w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue pretium faucibus leo nisl nulla pharetra nullam.</p>
+            <a href="../index.html">
+                <button class="cta-pad bg-[#0FE3AF] size-18 font-semibold text-[#363636] my-[20px]">
+                    Go to homepage
+                </button>
+            </a>
         </section>
     </main>
 
