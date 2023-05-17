@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="../output/styles.css" />
+    <link rel="stylesheet" href="../input/style.css" />
     <link rel="stylesheet" href="" />
 </head>
 
@@ -41,57 +42,58 @@
             <!-- nav lists -->
             <ul class=" ul flex size-18 items-center gap-[15px]">
                 <a href="../index.html">
-                    <li class="blue-hover py-[30px]">Home</li>
+                    <li class="py-[20px] blue-hover">Home</li>
                 </a>
 
                 <a href="./about.html">
-                    <li class="blue-hover py-[30px]">About</li>
+                    <li class="py-[20px] blue-hover">About</li>
                 </a>
 
                 <a href="./services.html">
-                    <li class="blue-hover py-[30px]">Service</li>
+                    <li class="py-[20px] blue-hover">Service</li>
                 </a>
 
                 <li style="position: relative;" class="page-and-drop-down">
-                    <a href="" class="pages size-16">Pages
-            <img src="../output/images/tick.png" alt="" width="20" class="inline">
-            </a>
+                    <a href="" style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                        <span class="pages size-16">Pages</span>   
+                           <div style="width: 15px; height: 15px; background-color: #0152A8; border-radius: 15px; display: flex; justify-content: center; align-items: center;">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="white" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
+                           </div>
+               </a>
 
-                    <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #0152A8; top: 10px" class="dropdown-menu"></div>
 
                     <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 100%;">
                         <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #0152A8; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
 
 
                             <li style="list-style-type: none;" style="margin: 0;">
-                                <a href="./services.html" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Services</span></a>
+                                <a href="./pages/services.html" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Services</span></a>
                             </li>
                             <li style="margin: 0;">
-                                <a href="./blog.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog</span></a>
+                                <a href="./pages/blog.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog</span></a>
                             </li>
                             <li style="margin: 0;">
-                                <a href="./team.html" aria-current="page" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Team</span></a>
+                                <a href="./pages/team.html" aria-current="page" style="text-decoration: none"><span style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Team</span></a>
                             </li>
                             <li style="margin: 0;">
-                                <a href="./appointment.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Appointment</span></a>
-                            </li>
-
-                            <li style="margin: 0;">
-                                <a href="./pricing.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Pricing</span></a>
+                                <a href="./pages/appointment.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Appointment</span></a>
                             </li>
 
                             <li style="margin: 0;">
-                                <a href="./change.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Change Log</span></a>
+                                <a href="./pages/pricing.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Pricing</span></a>
+                            </li>
+
+                            <li style="margin: 0;">
+                                <a href="./pages/change.html" style="font-family: 'Inter'; color: white; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Change Log</span></a>
                             </li>
 
                         </ul>
                     </div>
                 </li>
 
-                <img src="./output/images/tick.png" alt="" class="hide" />
                 </a>
                 <a href="./contact.html">
-                    <li class="whitespace-nowrap blue-hover py-[30px]">Contact us</li>
+                    <li class="whitespace-nowrap py-[20px] blue-hover">Contact us</li>
                 </a>
             </ul>
 

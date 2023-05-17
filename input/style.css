@@ -117,6 +117,7 @@ nav ul li:hover {
 
 .mobile-nav li:hover {
     background-color: #0152A8;
+    
 }
 
 .dropdown-menu {
@@ -201,7 +202,9 @@ img {
 
 
 /* END OF ABOUT SECTION */
-
+.blue-hover{
+    border-bottom: 2px solid white;
+}
 .blue-hover:hover {
     color: #0152A8;
     border-bottom: 2px solid #0152A8;
